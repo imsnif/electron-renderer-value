@@ -43,3 +43,19 @@ test('can get value from renderer window object', async t => {
     t.fail(e)
   }
 })
+
+test('bad parameters', async t => {
+  t.plan(1)
+  try {
+    const emitter = new EventEmitter()
+    const rendererVal = applyMocks(emitter)
+    t.throws(
+      () => rendererVal('notWebContents', 'window.val'),
+      'notWebContents is not a webContents object',
+      'cannot call with bad webContents'
+    )
+  } catch(e) {
+    t.fail(e)
+  }
+})
+
