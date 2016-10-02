@@ -4,7 +4,7 @@
   "description": "Get a value as a promise from an electron renderer process",
   "main": "index.js",
   "scripts": {
-    "test": "babel-tape-runner ./test/integration/*.js --tap | tap-spec",
+    "test": "standard && babel-tape-runner ./test/integration/*.js --tap | tap-spec",
     "coverage": "nyc --reporter=lcov npm test",
     "xvfb-test": "xvfb-run npm test",
     "xvfb-coverage": "xvfb-run npm run coverage",
@@ -31,6 +31,7 @@
     "nyc": "^8.3.0",
     "proxyquire": "^1.7.10",
     "spectron": "^3.4.0",
+    "standard": "^8.3.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.2"
   },

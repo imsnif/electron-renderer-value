@@ -9,5 +9,5 @@ app.on('ready', () => {
     frame: false
   })
   win.loadURL(`file://${__dirname}/index.html`)
-  ipcMain.on('1', (e, p) => global.__payload__ = p)
+  ipcMain.on('1', (e, p) => { global.__payload__ = p })
 })

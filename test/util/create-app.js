@@ -1,6 +1,5 @@
 const electron = require('electron')
 const Application = require('spectron').Application
-const test = require('tape')
 const path = require('path')
 
 module.exports = async function createApp (t) {

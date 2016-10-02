@@ -1,6 +1,5 @@
 const createApp = require('../util/create-app')
 const test = require('tape')
-const electron = require('electron')
 
 const proxyquire = require('proxyquire')
 
@@ -54,7 +53,7 @@ test('bad parameters', async t => {
       'notWebContents is not a webContents object',
       'cannot call with bad webContents'
     )
-  } catch(e) {
+  } catch (e) {
     t.fail(e)
   }
 })

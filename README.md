@@ -1,6 +1,7 @@
 # electron-renderer-view
 [![Build Status](https://travis-ci.org/imsnif/electron-renderer-value.svg?branch=master)](https://travis-ci.org/imsnif/electron-renderer-value)
 [![Coverage Status](https://coveralls.io/repos/github/imsnif/electron-renderer-value/badge.svg?branch=master)](https://coveralls.io/github/imsnif/electron-renderer-value?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 
 Easily get a value from an electron renderer instance   
