@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "babel-tape-runner ./test/integration/*.js --tap | tap-spec",
-    "coverage": "nyc --reporter=lcov npm test"
+    "coverage": "nyc --reporter=lcov npm test",
+    "xvfb-test": "xvfb-run npm test",
+    "xvfb-coverage": "xvfb-run npm run coverage"
   },
   "keywords": [
     "electron",
