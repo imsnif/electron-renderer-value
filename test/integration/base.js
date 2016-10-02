@@ -22,7 +22,7 @@ function bridgePayload (app, emitter) {
   })
 }
 
-test('can create terminal window', async t => {
+test('can get value from renderer window object', async t => {
   t.plan(1)
   const app = await createApp(t)
   try {
