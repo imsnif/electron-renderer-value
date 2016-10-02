@@ -46,5 +46,9 @@
   },
   "dependencies": {
     "uuid": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imsnif/electron-renderer-value"
   }
 }
