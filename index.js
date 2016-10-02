@@ -17,6 +17,5 @@ module.exports = function (webContents, val) {
       const renderer = require('electron').ipcRenderer
       renderer.send('${eventId}', ${val})
     })()`)
-    setTimeout(resolve, 1000)
   })
 }
