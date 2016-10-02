@@ -2,6 +2,12 @@ language: node_js
 node_js:
   - "node"
 
+addons:
+  apt:
+    packages:
+      - xvfb
+      - xvfb-run
+
 before_script: electron-rebuild
 
 script: npm run xvfb-test
@@ -17,5 +23,3 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
-      - xvfb
-      - xvfb-run
