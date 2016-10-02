@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "node"
+
+before_script: electron-rebuild
+
+script: npm run xvfb-test
+
+after_script: npm run coveralls
+
+env:
+  - CXX=g++-4.8 DISPLAY=:99.0
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+      - xvfb
+      - xvfb-run
